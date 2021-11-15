@@ -21,7 +21,8 @@ function createGalery (galery) {
 }
 
 //2. Реализация делегирования на div.gallery и получение url большого изображения.
-
+const imgBig = document.querySelector('.gallery__link').href;
+console.log(imgBig);
 //забороняємо переходити по посиланні
 
 const folsA = document.querySelector('.gallery');
@@ -39,14 +40,12 @@ imgModal.addEventListener('click', modalOpen);
 
 function modalOpen(events) {
   const instance = basicLightbox.create(
-`
 
-`
+ `<img src="${imgBig}">`
+
   )
 instance.show()
 }
-
-
 
 
 
