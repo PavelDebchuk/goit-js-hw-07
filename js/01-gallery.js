@@ -30,7 +30,7 @@ let imgData;
 const imgBig = document.querySelector('.gallery');
 imgBig.addEventListener('click', imgOpen);
   function imgOpen (event) {
-  return imgData = event.target.getAttribute('data-source');
+    return imgData = event.target.getAttribute('data-source');
   }
 
 
